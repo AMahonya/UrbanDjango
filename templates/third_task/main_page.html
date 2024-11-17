@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Маникюр мечты</title>
 </head>
 <body>
-$END$
+    <header>
+        <h1>Маникюр мечты</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <a href="#" class="button">Главная</a>
+            <br>
+            <br>
+            <a href="{% url 'nails_services' %}"
+               class="button">Наши услуги: подчеркните свою индивидуальность</a>
+
+            <br>
+            <br>
+            <a href="{% url 'nails_gallery' %}" class="button">Вдохновляйтесь нашими работами</a>
+        </section>
+
 </body>
 </html>

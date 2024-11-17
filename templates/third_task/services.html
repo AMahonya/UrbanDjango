@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Наши услуги: | Маникюр мечты</title>
 </head>
 <body>
-$END$
+     <main>
+    <section class="services">
+        <h2>{{head}}</h2>
+           <div class="clasik">
+
+                <h3>{{context.clasik.title}}</h3>
+                <ul>
+
+                    <li>
+                        <p>{{context.clasik.description}}</p>
+                    </li>
+                <li>
+                        <p>{{context.clasik.time}}</p>
+                    </li>
+                    <li>
+                        <p>{{context.clasik.price}}</p>
+                        <button type="button">
+                        <svg width="" height="30">
+                            <path d="..."/>
+                        </svg>
+                        Записаться
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        <div class="evrop">
+            <h3>{{context.evrop.title}}</h3>
+            <ul>
+
+                <li>
+                    <p>{{context.evrop.description}}</p>
+                </li>
+                <li>
+                        <p>{{context.evrop.time}}</p>
+                    </li>
+                <li>
+                    <p>{{context.evrop.price}}</p>
+                    <button type="button">
+                      <svg width="" height="30">
+                        <path d="..."/>
+                      </svg>
+                      Записаться
+                    </button>
+
+                </li>
+            </ul>
+
+        </div>
+      <div class="pedicure">
+            <h3>{{context.pedicure.title}}</h3>
+            <ul>
+
+                <li>
+                  <p>{{context.pedicure.description}}</p>
+
+                </li>
+                <li>
+                        <p>{{context.pedicure.time}}</p>
+                    </li>
+                <li>
+                    <p>{{context.pedicure.price}}</p>
+                    <button type="button">
+                      <svg width="" height="30">
+                        <path d="..."/>
+                      </svg>
+                      Записаться
+                    </button>
+
+                </li>
+            </ul>
+           </div>
+
+      <div class="service">
+                   <form method="get" action="{% url 'main' %}">
+                <button type="submit">Вернуться на главную</button>
+            </form>
+
+                     </div>
+    </section>
+</main>
 </body>
 </html>

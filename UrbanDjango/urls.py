@@ -19,9 +19,13 @@ from django.urls import path
 from django.views.generic import TemplateView
 
 from task2.views import func_temp, class_temp
+from task4.views import main_page, services, gallery
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('func/', func_temp),
     path('class/', class_temp.as_view()),
+    path('nails/', main_page, name="main"),
+    path('nails/services/', services, name='nails_services'),
+    path('nails/gallery/', gallery, name='nails_gallery'),
 ]
