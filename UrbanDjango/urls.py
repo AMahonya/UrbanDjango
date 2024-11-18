@@ -20,6 +20,7 @@ from django.views.generic import TemplateView
 
 from task2.views import func_temp, class_temp
 from task4.views import main_page, services, gallery
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +29,7 @@ urlpatterns = [
     path('nails/', main_page, name="main"),
     path('nails/services/', services, name='nails_services'),
     path('nails/gallery/', gallery, name='nails_gallery'),
+    path('sign_up_by_django/', sign_up_by_django, name='Registraciya'),
+    path('sign_up_by_html/', sign_up_by_html, name='Registraciya'),
+
 ]
