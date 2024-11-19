@@ -1,0 +1,36 @@
+{% extends 'menu.html' %}
+{% block title %}Наши услуги{% endblock %}
+
+{% block pagename %}Наши услуги: {% endblock %}
+{% block content %}
+    <section class="services">
+        <h2>{{head}}</h2>
+           <div class="uslugi">
+            <ul>
+                    {% for service in services %}
+
+                <h3>{{ service.title }}</h3>
+                        <li>
+                            <p>{{ service.description }}</p>
+                          </li>
+                <li>
+                            <p>{{ service.time }}</p>
+                </li>
+                <li>
+                            <p>{{ service.price }}</p>
+                </li>
+                            <button type="button">Записаться</button>
+
+                    {% endfor %}
+                </ul>
+        </div>
+
+
+      <div class="service">
+                   <form method="get" action="{% url 'main' %}">
+                <button type="submit">Вернуться на главную</button>
+            </form>
+
+                     </div>
+    </section>
+{% endblock %}
